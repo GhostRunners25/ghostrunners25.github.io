@@ -1,0 +1,257 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+}
+
+.NavBar li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: Heading;
+    font-size: 22px;
+    text-align: center;
+}
+
+.NavBar li a:hover {
+    color: rgb(175, 175, 175);
+}
+
+.NavBar ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 12px 0px;
+    overflow: hidden;
+}
+
+.NavBar img {
+    width: 190px;
+    height: auto;
+}
+
+.Icon {
+    max-height: none;
+    height: 25px;
+    margin-top: 7px;
+}
+
+h2 {
+    font-family: Heading;
+    font-size: 42px;
+    text-align: center;
+}
+
+h3 {
+    font-family: Heading;
+    font-size: 22px;
+    text-align: center;
+}
+
+h4 {
+    font-family: Heading;
+    font-size: 18px;
+    text-align: center;
+    margin: 0px 18px;
+    padding: 0px 0px;
+}
+
+h4:hover {
+    border-bottom: solid 4px rgb(0, 0, 0);
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    margin: 0px 0px;
+    padding: 0px 0px; 
+}
+
+.GameContainer {
+    position: relative;
+    font-family: Heading;
+    width: 200px;
+    height: auto;
+}
+
+.GameContainer:hover .Overlay {
+    opacity: 0.9;
+}
+
+.VideoContainer {
+    position: relative;
+    font-family: Heading;
+    width: 400px;
+    height: auto;
+}
+
+.VideoContainer:hover .Overlay {
+    opacity: 0.9;
+}
+
+.VideoTextTitle {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 112.5px;
+    left: 200px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.GameTextTitle {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 16px;
+    left: 100px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.GameTextDescription {
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 85px;
+    left: 100px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.GameTextAvailablity {
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.Overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(0, 0, 0);
+}
+
+.Image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.List {
+    border-collapse: collapse;
+}
+
+.List td {
+    padding: 0; 
+    margin: 0;
+}
+
+.List ul {
+    list-style-type: none;
+}
+
+.Selection {
+    text-decoration: none;
+    color: black;
+}
+
+.AboutTextBox {
+    position: relative;
+    font-family: Heading;
+    width: 90vmin;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.SocialContainer {
+    position: relative;
+    font-family: Heading;
+    width: 150px;
+    height: auto;
+    margin: 30px;
+}
+
+.SocialImage {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.SocialText {
+    font-size: 20px;
+    position: absolute;
+    top: 170px;
+    left: 75px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.SocialText a {
+    text-decoration: none;
+    color: black;
+}
+
+.SocialText a:hover {
+    color: rgb(175, 175, 175);
+}
+
+.PolicyContainer {
+    position: relative;
+    font-family: Heading;
+    width: 90vmin;
+    height: auto;
+}
+
+.PolicyTitle {
+    font-size: 19px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    color: black;
+    border-top: solid 3px rgb(0, 0, 0);
+    border-radius: 3px;
+    text-decoration: underline;
+}
+
+.PolicyDecription {
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    color: black;
+    border-bottom: solid 3px rgb(0, 0, 0);
+}
+
+@font-face {
+    font-family: "Heading";
+    src: url(Font/FredokaOne-Regular.ttf);
+}

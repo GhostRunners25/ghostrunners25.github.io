@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <!-- Start Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="GhostRunners25">
+        <!-- End Meta Tags -->
+        <!-- Start Link Tags -->
+        <link rel="shortcut icon" type="image/png" href="Photos/Icons/Ghost.png">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="DOCTYPE html" type="text/html" href="index.html">
+        <link rel="DOCTYPE html" type="text/html" href="about.html">
+        <link rel="DOCTYPE html" type="text/html" href="policies.html">
+        <!-- End Link Tags -->
+        <title>GhostRunners25 - Policies</title>
+    </head>
+    
+    <header>
+        <div class="NavBar">
+            <ul id="Expanded">
+                <li style="float: left; margin-left: 50px;"><img src="Photos/HomePage/GhostRunners25_Website_Name.png"></li>
+                <li style="float: right; margin-right: 50px;"><a href="policies.html">Policies</a></li>
+                <li style="float: right; margin-right: 50px;"><a href="about.html">About</a></li>
+                <li style="float: right; margin-right: 50px;"><a href="index.html">Projects</a></li>
+            </ul>
+            <ul id="Collapsed" style="display: none;">
+                <table align="center">
+                    <tr>
+                        <td colspan="3" align="center"><li><img src="Photos/HomePage/GhostRunners25_Website_Name.png"></li></td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><li style="margin-right: 50px;"><a href="index.html">Projects</a></li></td>
+                        <td colspan="1"><li style="margin-right: 50px;"><a href="about.html">About</a></li></td>
+                        <td colspan="1"><li><a href="policies.html">Policies</a></li></td>
+                    </tr>
+                </table>
+            </ul>
+        </div>
+    </header>
+    <body>
+        <br>
+        <table align="center">
+            <tr>
+                <td colspan="1"><h2>Policies</h2></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="PolicyContainer"><a href="Privacy Policies/PinkysAdventurePrivacyPolicy.html" style="text-decoration: none;" target="_blank"><div class="PolicyTitle">Pinky's Adventure Privacy Policy</div><div class="PolicyDecription">This is a privacy policy for the game 'Pinky's Adventure'. This informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.</div></a></div>
+                </td>
+            </tr>
+        </table>
+    </body>
+    
+    <footer>
+        
+    </footer>
+    
+    <script type="text/javascript">
+        window.setInterval(WindowSize, 0);
+        
+        var Expanded = document.getElementById("Expanded");
+        var Collapsed = document.getElementById("Collapsed");
+        var CalculateSize = 0;
+        
+        function WindowSize(){
+            CalculateSize = (window.innerWidth / 1000);
+            if(CalculateSize > 0.7){
+               Expanded.style.display = "block";
+               Collapsed.style.display = "none";
+            } else {
+               Expanded.style.display = "none";
+               Collapsed.style.display = "block";
+            }
+        }
+    </script>
+    
+</html>
