@@ -1,2 +1,2 @@
 # ghostrunners25.github.io
-This is a privacy policy for Pinky's Adventure
+This is GhostRunners25 Website, it contains all the files for GhostRunners25 website. This is programmed by GhostRunners25 himself
