@@ -118,7 +118,7 @@ footer {
     color: white;
     font-size: 14px;
     position: absolute;
-    top: 85px;
+    top: 110px;
     left: 100px;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -185,6 +185,7 @@ footer {
     width: 90vmin;
     height: auto;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .SocialContainer {
