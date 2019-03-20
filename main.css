@@ -241,6 +241,7 @@ footer {
     border-top: solid 3px rgb(0, 0, 0);
     border-radius: 3px;
     text-decoration: underline;
+    padding-top: 2px;
 }
 
 .PolicyDecription {
@@ -249,6 +250,7 @@ footer {
     width: 100%;
     height: auto;
     color: black;
+    padding-bottom: 5px;
     border-bottom: solid 3px rgb(0, 0, 0);
 }
 
