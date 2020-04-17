@@ -71,10 +71,10 @@
             <div class="pagejump" id="projects"></div>
             <article class="projects">
                 <div class="both">
-                    <div class="left" id="overlay" onmouseenter="HideOverlay()"  onclick="Show_O_Button()">
+                    <div class="left" id="overlay"  onclick="HideOverlay()">
                         <img src="Images/Projects/Games/Pinky.png" alt="Project Logo" id="p-img">
                     </div>
-                    <div class="right" onmouseleave="ShowOverlay()" onclick="Show_O_Button()">
+                    <div class="right" onclick="ShowOverlay()">
                         <h1 id="p-title">Pinky's Adventure</h1>
                         <h3 id="p-version">public beta v2.9.1</h3>
                         <p id="p-description">Currently in Pinky's Adventure you are able to test basic platformer levels to get a grasp of the basic game feel.<br><br>Remake coming soon!</p>
@@ -146,7 +146,7 @@
             var Expanded = false;
             var Show_M = true;
             var Show_E = true;
-            var Show_O = true;
+            var Show_O = false;
             var Show_A = true;
             var Was_Visible = false;
             
@@ -487,7 +487,7 @@
                 }
                 FadeProjectOut();
                 window.clearInterval(ProjectInterval);
-                ProjectInterval = window.setInterval(PlusProjectArrow, 10000);
+                ProjectInterval = window.setInterval(PlusProjectArrow, 60000);
             }
             
             function ChangeProject(Information)
@@ -534,7 +534,7 @@
             
             Overlay.style.visibility = "visible";
             ChangeProject(AllGameProjects[ProjectsIndex]);
-            var ProjectInterval = window.setInterval(PlusProjectArrow, 10000);
+            var ProjectInterval = window.setInterval(PlusProjectArrow, 60000);
             window.setInterval(SizeControl, 0);
             window.setTimeout(Change, 5000);
         </script>
