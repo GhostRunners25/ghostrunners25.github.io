@@ -1,223 +1,542 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <!-- Start Meta Tags -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="ghostrunners25,gr25,projects,games,videos,website">
-        <meta name="description" content="This websites contains links to all the game projects developed by GhostRunners25 (Isaac Butler). Each project section containing links to the download/playing page, the privacy policy and containing information about the project.">
-        <meta name="author" content="GhostRunners25">
-        <!-- End Meta Tags -->
-        <!-- Start Link Tags -->
-        <link rel="shortcut icon" type="image/png" href="Images/Icons/Ghost_Icon.png">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="Isaac Butler (GhostRunners25)">
+        <link rel="shortcut icon" type="image/png" href="Images/Ghost/Ghost.png">
         <link rel="stylesheet" type="text/css" href="main.css">
         <link rel="DOCTYPE html" type="text/html" href="index.html">
-        <link rel="DOCTYPE html" type="text/html" href="Privacy%2520Policies/PolicyNotAvailable.html">
-        <!-- End Link Tags -->
-        <!-- Start Title -->
+        <link rel="DOCTYPE html" type="text/html" href="PrivacyPolicies/PolicyNotAvailable.html">
         <title>GhostRunners25</title>
-        <!-- End Title -->
     </head>
     
-    <header>
-        <table align="center">
-            <tr>
-                <td align="center"><img src="Images/Header/GhostRunners25_Header.png"></td>
-            </tr>
-        </table>
-    </header>
-    
     <body>
-        <br>
-        <h1>Projects</h1>
-        <table align="center" class="projects">
-            <tr>
-                <td id="p1.1"></td>
-                <td id="p1.2"></td>
-                <td id="p1.3"></td>
-                <td id="p1.4"></td>
-            </tr>
-            <tr>
-                <td id="p2.1"></td>
-                <td id="p2.2"></td>
-                <td id="p2.3"></td>
-                <td id="p2.4"></td>
-            </tr>
-            <tr>
-                <td id="p3.1"></td>
-                <td id="p3.2"></td>
-                <td id="p3.3"></td>
-                <td id="p3.4"></td>
-            </tr>
-            <tr>
-                <td id="p4.1"></td>
-                <td id="p4.2"></td>
-                <td id="p4.3"></td>
-                <td id="p4.4"></td>
-            </tr>
-        </table>
+        <header>
+            <nav>
+                <div id="banner">
+                    <img src="Images/Ghost/Ghost.png" alt="Ghost" id="banner-img">
+                    <h1>GhostRunners25</h1>
+                </div>
+                <div id="s-nav">
+                    <div class="bar-holder" onclick="Show_M_Button()">
+                        <div class="bar-1"></div>
+                        <div class="bar-2"></div>
+                        <div class="bar-3"></div>
+                    </div>
+                </div>
+                <ul id="nav">
+                    <li><a href="#follow">Follow</a></li>
+                    <li><a href="#fiverr">Fiverr</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </header>
         
-        <h1>Social Media</h1>
+        <div class="f-nav" id="f-nav">
+            <ul id="f-nav-menu">
+                <li><a href="#about" onclick="HideMenu()">About</a></li>
+                <li><a href="#projects" onclick="HideMenu()">Projects</a></li>
+                <li><a href="#fiverr" onclick="HideMenu()">Fiverr</a></li>
+                <li><a href="#follow" onclick="HideMenu()">Follow</a></li>
+            </ul>
+        </div>
         
-        <table align="center" class="social">
-            <tr>
-                <td id="s1.1"></td>
-                <td id="s1.2"></td>
-                <td id="s1.3"></td>
-            </tr>
-            <tr>
-                <td id="s2.1"></td>
-                <td id="s2.2"></td>
-                <td id="s2.3"></td>
-            </tr>
-            <tr>
-                <td id="s3.1"></td>
-                <td id="s3.2"></td>
-                <td id="s3.3"></td>
-            </tr>
-        </table>
-        <br>
+        <section>
+            <div class="pagejump" id="about"></div>
+            <article class="about">
+                <div class="left">
+                    <div class="a-section-w" id="d-who" onclick="Show_A_Button(this)">
+                        <h1 id="h-who">Who am I?</h1>
+                        <p id="a-p">I'm an 18-year-old with a passion for programming. I began my programming journey back in 2016; I'd be lying if I said programming instantly became my passion. I found programming quite difficult in the beginning. I started with HTML, and all I was able to do was display text in various colours.<br><br>However, programming isn't all my life is. I love going on long walks and exploring the world around me. Also, I love the TV series Friends.<br><br>Oh, and my real name is Isaac Butler :D</p>
+                    </div>
+                    <div class="a-section-g" id="d-what" onclick="Show_A_Button(this)">
+                        <h1 id="h-what">What do I do?</h1>
+                        <p id="a-p">I'm a programmer. I mainly code in the languages Python, C#, HTML, CSS, JavaScript and Java. I practice coding daily; I always ensure I have a project to develop. I develop projects ranging in the development of software, video games and occasionally websites.<br><br>Currently, the only projects I have released are video games. However, I plan to start releasing some software soon. All the projects will be showcased in the <a href="#projects">projects section</a> of this page.</p>
+                    </div>
+                    <div class="a-section-w" id="d-why" onclick="Show_A_Button(this)">
+                        <h1 id="h-why">Why do I do it?</h1>
+                        <p id="a-p">I do it because I love it. I love it because it allows you to build your imagination, granted sometimes at the cost of your sanity. However, the feeling you get when your project finally starts taking shape makes it all worth it. It's such a euphoric feeling.<br><br>When I'm doing game development and I design a sprite sheet for it. I need each sprite saving individually which sometimes takes an hour. So I developed software that would save each sprite individually in seconds. That's another reason I love it, it gives you the ability to improve things.</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="Images/Ghost/Ghost.png" alt="GhostRunners25 Logo" id="a-img">
+                </div>
+            </article>
+        </section>
+        <section>
+            <div class="pagejump" id="projects"></div>
+            <article class="projects">
+                <div class="both">
+                    <div class="left" id="overlay" onmouseenter="HideOverlay()"  onclick="Show_O_Button()">
+                        <img src="Images/Projects/Games/Pinky.png" alt="Project Logo" id="p-img">
+                    </div>
+                    <div class="right" onmouseleave="ShowOverlay()" onclick="Show_O_Button()">
+                        <h1 id="p-title">Pinky's Adventure</h1>
+                        <h3 id="p-version">public beta v2.9.1</h3>
+                        <p id="p-description">Currently in Pinky's Adventure you are able to test basic platformer levels to get a grasp of the basic game feel.<br><br>Remake coming soon!</p>
+                        <h2><div class="p-link"><a id="p-link" href="" target="_blank">View on Itch.io &gt;</a></div></h2>
+                        <h4><div class="p-privacy"><a id="p-privacy" href="" target="_blank">View privacy policy &gt;</a></div></h4>
+                    </div>
+                </div>
+                <div class="l-arrow" onclick="MinusProjectArrow()">
+                    <h5>&lt;</h5>
+                </div>
+                <div class="b-menu">
+                    <!-- &#8964; -->
+                    <h6>Software coming soon!</h6>
+                </div>
+                <div class="r-arrow" onclick="PlusProjectArrow()">
+                    <h5>&gt;</h5>
+                </div>
+            </article>
+        </section>
+        <section>
+            <div class="pagejump" id="fiverr"></div>
+            <article class="fiverr">
+                <div class="left">
+                    <div class="f-profile">
+                        <img src="Images/Fiverr/Isaac.JPG" alt="Isaac Butler">
+                        <h2><a href="https://www.fiverr.com/ghostrunners25">ghostrunners25</a></h2>
+                    </div>
+                </div>
+                <div class="right">
+                    <h2>Coming soon!</h2>
+                </div>
+            </article>
+        </section>
+        <section>
+            <div class="pagejump" id="follow"></div>
+            <article class="follow">
+                <div class="small" id="s-left" onmouseenter="ShowExtra(this)" onmouseleave="HideExtra(this)" onclick="Show_E_Button(this)">
+                    <a href="https://twitter.com/GhostRunners25" target="_blank"><img id="twitter" src="Images/SocialMedia/Twitter_Logo_Blue.png" alt="Twitter Logo"></a>
+                    <div class="extra">
+                        <hr>
+                        <p><a href="https://twitter.com/GhostRunners25" target="_blank">Follow</a></p>
+                        <p id="extra-p">Stay up to date with extra information, photos and videos about developing projects</p>
+                    </div>
+                </div>
+                <div class="small" onmouseenter="ShowExtra(this)" onmouseleave="HideExtra(this)" onclick="Show_E_Button(this)">
+                    <a href="https://www.youtube.com/channel/UCugRE7l16EwGU9EwLtEAl-A" target="_blank"><img id="youtube" src="Images/SocialMedia/yt_icon_rgb.png" alt="YouTube Logo"></a>
+                    <div class="extra">
+                        <hr>
+                        <p><a href="https://www.youtube.com/channel/UCugRE7l16EwGU9EwLtEAl-A" target="_blank">Subscribe</a></p>
+                        <p id="extra-p">Comming soon</p>
+                    </div>
+                </div>
+                <div class="small" id="s-right" onmouseenter="ShowExtra(this)" onmouseleave="HideExtra(this)" onclick="Show_E_Button(this)">
+                    <a href="https://www.instagram.com/ghostrunners25/" target="_blank"><img id="instagram" src="Images/SocialMedia/IG_Glyph_Fill.png" alt="Instagram Logo"></a>
+                    <div class="extra">
+                        <hr>
+                        <p><a href="https://www.instagram.com/ghostrunners25/" target="_blank">Follow</a></p>
+                        <p id="extra-p">Stay up to date with photos and videos about developing projects</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        
+        <footer>
+            <h4>Created by Isaac Butler (GhostRunners25)</h4>
+        </footer>
+        
         <script type="text/javascript">
+            var Expanded = false;
+            var Show_M = true;
+            var Show_E = true;
+            var Show_O = true;
+            var Show_A = true;
+            var Was_Visible = false;
             
-            // Variables for the socials
+            var Left = document.getElementsByClassName("left");
+            var Right = document.getElementsByClassName("right");
+            var Small = document.getElementsByClassName("small");
+            var Both = document.getElementsByClassName("both");
+            var Extra = document.getElementsByClassName("extra");
+            var Small_Left = document.getElementById("s-left");
+            var Small_Right = document.getElementById("s-right");
+            var Nav = document.getElementById("nav");
+            var Banner = document.getElementById("banner");
+            var Banner_Img = document.getElementById("banner-img")
+            var Small_Nav = document.getElementById("s-nav");
+            var Full_Nav = document.getElementById("f-nav");
+            var Full_Nav_Menu = document.getElementById("f-nav-menu");
+            var Overlay = document.getElementById("overlay");
             
-            var Twitter = "<div class='abox-case'>"+"<div class='smbox-container'>"+"<a href='https://twitter.com/GhostRunners25' target='_blank'>"+"<img src='Images/Icons/Twitter_White.png' alt='Twitter Logo In White' class='smbox-image'>"+"</a>"+"</div>"+"</div>";
+            var About_IMG = document.getElementById("a-img");
+            var About_Images = ["Images/Ghost/Ghost.png", "Images/Ghost/Ghost_Plain.png", "Images/Ghost/Ghost_Mix.png"];
+            var About_Images_Index = 1;
+            var FadedOut = false;
             
-            var Instagram = "<div class='abox-case'>"+"<div class='smbox-container'>"+"<a href='https://www.instagram.com/ghostrunners25' target='_blank'>"+"<img src='Images/Icons/Instagram_White.png' alt='Instagram Logo In White' class='smbox-image'>"+"</a>"+"</div>"+"</div>";
+            var Projects_Title = document.getElementById("p-title");
+            var Projects_Version = document.getElementById("p-version");
+            var Projects_Description = document.getElementById("p-description");
+            var Projects_Privacy = document.getElementById("p-privacy");
+            var Projects_Link = document.getElementById("p-link");
+            var Projects_Image = document.getElementById("p-img");
             
-            var YouTube = "<div class='abox-case'>"+"<div class='smbox-container'>"+"<a href='https://www.youtube.com/channel/UCugRE7l16EwGU9EwLtEAl-A' target='_blank'>"+"<img src='Images/Icons/YouTube_White.png' alt='YouTube Logo In White' class='smbox-image'>"+"</a>"+"</div>"+"</div>";
-            
-            // Variables for the projects
-            
-            var PinkysAdventure = "<div class='abox-case'>"+"<div class='lbox-container'>"+"<a href='https://ghostrunners25.itch.io/pinkys-adventure' target='_blank'>"+"<img src='Images/Projects/Pinky.png' alt='Pinky\'s Adventrue Logo' class='lbox-image'>"+"<div class='lbox-background'>"+"<div class='lbox-title'>Pinky\'s Adventrue</div>"+"</div>"+"</a>"+"</div>"+"<div class='sbox-container'>"+"<a href='https://ghostrunners25.itch.io/pinkys-adventure' target='_blank'>"+"<div class='sbox-background'>"+"<div class='sbox-title'>Visit</div>"+"</div>"+"</a>"+"</div>"+"<div class='sbox-container'>"+"<a href='Privacy Policies/PolicyNotAvailable.html' target='_blank'>"+"<div class='sbox-background'>"+"<div class='sbox-title'>Privacy Policy</div>"+"</div>"+"</a>"+"</div>"+"<div class='ebox-container' onmouseover=\"ChangeEBox(this.id, '85px', '140px')\" onmouseout=\"ChangeEBox(this.id, '', '')\" id='ECPA'>"+"<a>"+"<div class='ebox-background'>"+"<div class='ebox-title'>About</div>"+"<div class='ebox-text' id='ETPA'>Public Beta 2.9.1<br><br>Currently in Pinky\'s Adventure you are able to test basic platformer levels to get a grasp of the basic game feel.</div>"+"</div>"+"</a>"+"</div>"+"</div>";
-            
-            var TimeMove = "<div class='abox-case'>"+"<div class='lbox-container'>"+"<a href='https://ghostrunners25.itch.io/time-move' target='_blank'>"+"<img src='Images/Projects/Time.png' alt='Time Move Logo' class='lbox-image'>"+"<div class='lbox-background'>"+"<div class='lbox-title'>Time Move</div>"+"</div>"+"</a>"+"</div>"+"<div class='sbox-container'>"+"<a href='https://ghostrunners25.itch.io/time-move' target='_blank'>"+"<div class='sbox-background'>"+"<div class='sbox-title'>Visit</div>"+"</div>"+"</a>"+"</div>"+"<div class='sbox-container'>"+"<a href='Privacy Policies/PolicyNotAvailable.html' target='_blank'>"+"<div class='sbox-background'>"+"<div class='sbox-title'>Privacy Policy</div>"+"</div>"+"</a>"+"</div>"+"<div class='ebox-container' onmouseover=\"ChangeEBox(this.id, '92px', '155px')\" onmouseout=\"ChangeEBox(this.id, '', '')\" id='ECTM'>"+"<a>"+"<div class='ebox-background'>"+"<div class='ebox-title'>About</div>"+"<div class='ebox-text' id='ETTM'>In this game you have to collect as many coins as you can without dying. Enemies and cannons will try to kill you. Time moves with you in this game so you can plan ahead and avoid their attacks.</div>"+"</div>"+"</a>"+"</div>"+"</div>";
-            
-            var IndustrialMiner = "<div class='abox-case'>"+"<div class='lbox-container'>"+"<a href='https://ghostrunners25.itch.io/industrial-miner' target='_blank'>"+"<img src='Images/Projects/Industrial.png' alt='Industrial Miner Logo' class='lbox-image'>"+"<div class='lbox-background'>"+"<div class='lbox-title'>Industrial Miner</div>"+"</div>"+"</a>"+"</div>"+"<div class='sbox-container'>"+"<a href='https://ghostrunners25.itch.io/industrial-miner' target='_blank'>"+"<div class='sbox-background'>"+"<div class='sbox-title'>Visit</div>"+"</div>"+"</a>"+"</div>"+"<div class='sbox-container'>"+"<a href='Privacy Policies/PolicyNotAvailable.html' target='_blank'>"+"<div class='sbox-background'>"+"<div class='sbox-title'>Privacy Policy</div>"+"</div>"+"</a>"+"</div>"+"<div class='ebox-container' onmouseover=\"ChangeEBox(this.id, '92px', '155px')\" onmouseout=\"ChangeEBox(this.id, '', '')\" id='ECIM'>"+"<a>"+"<div class='ebox-background'>"+"<div class='ebox-title'>About</div>"+"<div class='ebox-text' id='ETIM'>This game is a down-scrolling mining game where you have to mine blocks to gain more money. When your pickaxe breaks you can go to the shop to upgrade it to go deeper down the next time you mine.</div>"+"</div>"+"</a>"+"</div>"+"</div>";
-            
-            var CrystalTurret = "<div class='abox-case'>"+"<div class='lbox-container'>"+"<a href='https://ghostrunners25.itch.io/crystal-turrets' target='_blank'>"+"<img src='Images/Projects/Crystal.png' alt='Crystal Turret Logo' class='lbox-image'>"+"<div class='lbox-background'>"+"<div class='lbox-title'>Crystal Turrets</div>"+"</div>"+"</a>"+"</div>"+"<div class='sbox-container'>"+"<a href='https://ghostrunners25.itch.io/crystal-turrets' target='_blank'>"+"<div class='sbox-background'>"+"<div class='sbox-title'>Visit</div>"+"</div>"+"</a>"+"</div>"+"<div class='sbox-container'>"+"<a href='Privacy Policies/PolicyNotAvailable.html' target='_blank'>"+"<div class='sbox-background'>"+"<div class='sbox-title'>Privacy Policy</div>"+"</div>"+"</a>"+"</div>"+"<div class='ebox-container' onmouseover=\"ChangeEBox(this.id, '76px', '124px')\" onmouseout=\"ChangeEBox(this.id, '', '')\" id='ECCT'>"+"<a>"+"<div class='ebox-background'>"+"<div class='ebox-title'>About</div>"+"<div class='ebox-text' id='ETCT'>In Crystal Turrets you go around placing turrets trying to protect the \'life crystal\' from the zombies that want to destroy it.</div>"+"</div>"+"</a>"+"</div>"+"</div>";
-            
-            var CurrentWindowOption = 0;
-            var CalculatedWindowOption = 0;
-            
-            function ChangeEBox(Tag, TextPosition, BoxHieght)
+            var Pinky = ["Pinky's Adventure", "public beta v2.9.1", "Currently in Pinky's Adventure you are able to test basic platformer levels to get a grasp of the basic game feel.<br><br>Remake coming soon!", "https://ghostrunners25.itch.io/pinkys-adventure", "PrivacyPolicies/PolicyNotAvailable.html", "Images/Projects/Games/Pinky.png"];
+            var Time = ["Time Move", "v1.0", "In this game you have to collect as many coins as you can without dying. Enemies and cannons will try to kill you. Time moves with you in this game so you can plan ahead and avoid their attacks.", "https://ghostrunners25.itch.io/time-move", "PrivacyPolicies/PolicyNotAvailable.html", "Images/Projects/Games/Time.png"];
+            var Industrial = ["Industrial Miner", "v1.0", "This game is a down-scrolling mining game where you have to mine blocks to gain more money. When your pickaxe breaks you can go to the shop to upgrade it to go deeper down the next time you mine.", "https://ghostrunners25.itch.io/industrial-miner", "PrivacyPolicies/PolicyNotAvailable.html", "Images/Projects/Games/Industrial.png"];
+            var Crystal = ["Crystal Turrets", "v1.0", "In Crystal Turrets you go around placing turrets trying to protect the \'life crystal\' from the zombies that want to destroy it.", "https://ghostrunners25.itch.io/crystal-turrets", "PrivacyPolicies/PolicyNotAvailable.html", "Images/Projects/Games/Crystal.png"];
+            var AllGameProjects = [Pinky, Time, Industrial, Crystal];
+            var ProjectsIndex = 0;
+
+            function SizeControl()
             {
-                var OtherTag = Tag.replace("EC", "ET");
-                document.getElementById(Tag).style.height = BoxHieght;
-                document.getElementById(OtherTag).style.top = TextPosition;
-            }
-            
-            function AddElement(ParentId, ElementTag, ElementId, Html)
-            {
-                var Parent = document.getElementById(ParentId);
-                var NewElement = document.createElement(ElementTag);
-                NewElement.setAttribute("id", ElementId);
-                NewElement.innerHTML = Html;
-                Parent.appendChild(NewElement);
-            }
-                
-            function RemoveElement(ElementId)
-            {
-                var Element = document.getElementById(ElementId);
-                Element.parentNode.removeChild(Element);
-            }
-            
-            function SocialsInWindow()
-            {
-                if(window.innerWidth >= 500)
+                if(Expanded && window.innerWidth < 750)
                 {
-                    AddElement("s1.1", "a", "1", Twitter);
-                    AddElement("s1.2", "a", "2", YouTube);
-                    AddElement("s1.3", "a", "3", Instagram);
-                } 
-                else 
-                {
-                    AddElement("s1.1", "a", "1", Twitter);
-                    AddElement("s2.1", "a", "2", YouTube);
-                    AddElement("s3.1", "a", "3", Instagram);
+                    for(var i = 0; i < Left.length; i++){
+                        Left[i].style.cssFloat = "none";
+                    }
+                    for(var i = 0; i < Right.length; i++){
+                        Right[i].style.cssFloat = "none";
+                    }
+                    for(var i = 0; i < Small.length; i++){
+                        Small[i].style.height = "210px";
+                        Small[i].style.cssFloat = "none";
+                    }
+                    for(var i = 0; i < Both.length; i++){
+                        Both[i].style.width = "375px";
+                    }
+                    for(var i = 0; i < Extra.length; i++){
+                        Extra[i].style.visibility = "hidden";
+                        Extra[i].style.opacity = "0";
+                    }
+                    Small_Left.style.marginRight = "0px";
+                    Small_Right.style.marginLeft = "0px";
+                    Nav.style.display = "none";
+                    Small_Nav.style.display = "block";
+                    Banner.style.justifyContent = "center";
+                    Banner.style.display = "flex";
+                    Banner_Img.style.marginLeft = "0px";
+                    Full_Nav.style.display = "flex";
+                    
+                    Expanded = false;
+                }
+                else if (!Expanded && window.innerWidth >= 750)
+                {                    
+                    for(var i = 0; i < Left.length; i++){
+                        Left[i].style.cssFloat = "left";
+                    }
+                    for(var i = 0; i < Right.length; i++){
+                        Right[i].style.cssFloat = "right";
+                    }
+                    for(var i = 0; i < Small.length; i++){
+                        Small[i].style.height = "375px";
+                        Small[i].style.cssFloat = "left";
+                    }
+                    for(var i = 0; i < Both.length; i++){
+                        Both[i].style.width = "750px";
+                    }
+                    for(var i = 0; i < Extra.length; i++){
+                        Extra[i].style.visibility = "visible";
+                        Extra[i].style.opacity = "1";
+                    }
+                    Small_Left.style.marginRight = "60px";
+                    Small_Right.style.marginLeft = "60px";
+                    Nav.style.display = "block";
+                    Small_Nav.style.display = "none";
+                    Banner.style.justifyContent = "flex-start";
+                    Banner.style.display = "block";
+                    Banner_Img.style.marginLeft = "15px";
+                    Full_Nav.style.display = "none";
+                    
+                    Expanded = true;
                 }
             }
             
-            function ProjectsInWindow()
+            function ShowAbout(Element)
             {
-                if(window.innerWidth >= 1000)
+                if(Element.id != "d-who")
                 {
-                    AddElement("p1.1", "a", "4", PinkysAdventure);
-                    AddElement("p1.2", "a", "5", TimeMove);
-                    AddElement("p1.3", "a", "6", IndustrialMiner);
-                    AddElement("p1.4", "a", "7", CrystalTurret);
-                    CurrentWindowOption = 1000;
-                } 
-                else if(window.innerWidth >= 800)
-                {
-                    AddElement("p1.1", "a", "4", PinkysAdventure);
-                    AddElement("p1.2", "a", "5", TimeMove);
-                    AddElement("p1.3", "a", "6", IndustrialMiner);
-                    AddElement("p2.1", "a", "7", CrystalTurret);
-                    CurrentWindowOption = 800;
-                } 
-                else if(window.innerWidth >= 500)
-                {
-                    AddElement("p1.1", "a", "4", PinkysAdventure);
-                    AddElement("p1.2", "a", "5", TimeMove);
-                    AddElement("p2.1", "a", "6", IndustrialMiner);
-                    AddElement("p2.2", "a", "7", CrystalTurret);
-                    CurrentWindowOption = 500;
-                } 
-                else 
-                {
-                    AddElement("p1.1", "a", "4", PinkysAdventure);
-                    AddElement("p2.1", "a", "5", TimeMove);
-                    AddElement("p3.1", "a", "6", IndustrialMiner);
-                    AddElement("p4.1", "a", "7", CrystalTurret);
-                    CurrentWindowOption = 200;
+                    document.getElementById("d-who").style.zIndex = 5;
                 }
-            }
-            
-            function ResetPerWindow()
-            {
-                for (i = 0; i < 8; i++){
-                    if(document.getElementById(i.toString()))
+                if(Element.id != "d-what")
+                {
+                    document.getElementById("d-what").style.zIndex = 5;
+                }
+                if(Element.id != "d-why")
+                {
+                    document.getElementById("d-why").style.zIndex = 5;
+                }
+                Element.style.transition = "0.25s ease";
+                Element.style.zIndex = "9";
+                Element.style.height = "375px";
+                Element.style.marginTop = "0px";
+                for(var i = 0; i < Element.children.length; i++)
+                {
+                    if(Element.children[i].id == "a-p")
                     {
-                        RemoveElement(i.toString());
+                        Element.children[i].style.transition = "0.8s ease";
+                        Element.children[i].style.visibility = "visible";
+                        Element.children[i].style.opacity = "1";
                     }
                 }
-                ProjectsInWindow();
-                SocialsInWindow();
             }
             
-            function CalculateWindowOption()
+            function HideAbout(Element)
             {
-                if(window.innerWidth >= 1000)
+                Element.style.zIndex = "6";
+                Element.style.transition = "0.8s ease";
+                Element.style.height = "125px";
+                for(var i = 0; i < Element.children.length; i++)
                 {
-                    CalculatedWindowOption = 1000;
-                } 
-                else if(window.innerWidth >= 800)
-                {
-                    CalculatedWindowOption = 800;
+                    if(Element.children[i].id == "a-p")
+                    {
+                        Element.children[i].style.transition = "0.25s ease";
+                        Element.children[i].style.visibility = "hidden";
+                        Element.children[i].style.opacity = "0";
+                    }
                 }
-                else if(window.innerWidth >= 500)
+                if(Element.id == "d-what")
                 {
-                    CalculatedWindowOption = 500;
+                    Element.style.marginTop = "125px";
+                }
+                else if(Element.id == "d-why")
+                {
+                    Element.style.marginTop = "250px";
+                }
+            }
+            
+            function ShowExtra(Element)
+            {
+                if(!Expanded)
+                {
+                    Element.style.transition = "0.25s ease";
+                    Element.style.height = "375px";
+                    Children = Element.children;
+                    for(var i = 0; i < Children.length; i++)
+                    {
+                        if(Children[i].className == "extra")
+                        {
+                            Children[i].style.transition = "0.8s ease";
+                            Children[i].style.visibility = "visible";
+                            Children[i].style.opacity = "1";
+                            Show_E = false;
+                        }
+                    }
+                }
+            }
+            
+            function HideExtra(Element)
+            {
+                if(!Expanded)
+                {
+                    Element.style.transition = "0.8s ease";
+                    Element.style.height = "210px";
+                    Children = Element.children;
+                    for(var i = 0; i < Children.length; i++)
+                    {
+                        if(Children[i].className == "extra")
+                        {
+                            Children[i].style.transition = "0.25s ease";
+                            Children[i].style.visibility = "hidden";
+                            Children[i].style.opacity = "0";
+                            Show_E = true;
+                        }
+                    }
+                }
+            }
+            
+            function Show_A_Button(Element)
+            {
+                if(Show_A)
+                {
+                    ShowAbout(Element);
+                    Show_A = false;
+                }
+                else 
+                {
+                    HideAbout(Element);
+                    Show_A = true;
+                }
+            }
+            
+            function Show_E_Button(Element)
+            {
+                if(Show_E)
+                {
+                    ShowExtra(Element);
+                }   
+                else
+                {
+                    HideExtra(Element);
+                }
+            }
+            
+            function Show_M_Button()
+            {
+                if(Show_M)
+                {
+                    ShowMenu();
                 }
                 else
                 {
-                    CalculatedWindowOption = 200;
-                }
-                if(CurrentWindowOption != CalculatedWindowOption){
-                    ResetPerWindow();
+                    HideMenu();
                 }
             }
             
-            window.setInterval(CalculateWindowOption, 0);
+            function Show_O_Button()
+            {
+                if(Show_O)
+                {
+                    ShowOverlay();
+                }
+                else 
+                {
+                    HideOverlay();
+                }
+            }
+            
+            function ShowMenu()
+            {
+                if(!Expanded)
+                {
+                    Full_Nav.style.height = "220px";
+                    Full_Nav_Menu.style.visibility = "visible";
+                    Full_Nav_Menu.style.opacity = "1";
+                    Show_M = !Show_M;
+                }
+            }
+            
+            function HideMenu()
+            {
+                if(!Expanded)
+                {
+                    Full_Nav_Menu.style.visibility = "hidden";
+                    Full_Nav_Menu.style.opacity = "0";
+                    Full_Nav.style.height = "0px";
+                    Show_M = !Show_M;
+                }
+            }
+            
+            
+            function HideOverlay()
+            {
+                if(!Expanded)
+                {
+                    Overlay.style.visibility = "hidden";
+                    Overlay.style.opacity = "0";
+                    Show_O = true;
+                }
+            }
+            
+            function ShowOverlay()
+            {
+                if(!Expanded)
+                {
+                    Overlay.style.visibility = "visible";
+                    Overlay.style.opacity = "1";
+                    Show_O = false;
+                }
+            }
+            
+            function Change()
+            {
+                if(!FadedOut)
+                {
+                    FadeOut();
+                    FadedOut = true;
+                    window.setTimeout(Change, 1000);
+                }
+                else 
+                {
+                    ChangeImage();
+                    FadedOut = false;
+                    window.setTimeout(Change, 8000);
+                }
+            }
+            
+            function FadeOut()
+            {
+                About_IMG.style.opacity = "0";
+            }
+            
+            function ChangeImage()
+            {
+                if(About_Images_Index >= About_Images.length)
+                {
+                    About_Images_Index = 0;
+                }
+                About_IMG.src = About_Images[About_Images_Index];
+                About_Images_Index += 1;
+                About_IMG.style.opacity = "1";
+            }
+            
+            function MinusProjectArrow()
+            {
+                ProjectsIndex -= 1;
+                if(ProjectsIndex < 0)
+                {
+                    ProjectsIndex = AllGameProjects.length - 1;
+                }
+                FadeProjectOut();
+                window.clearInterval(ProjectInterval);
+                ProjectInterval = window.setInterval(PlusProjectArrow, 60000);
+            }
+            
+            function PlusProjectArrow()
+            {
+                ProjectsIndex += 1;
+                if(ProjectsIndex >= AllGameProjects.length)
+                {
+                    ProjectsIndex = 0;
+                }
+                FadeProjectOut();
+                window.clearInterval(ProjectInterval);
+                ProjectInterval = window.setInterval(PlusProjectArrow, 10000);
+            }
+            
+            function ChangeProject(Information)
+            {
+                Projects_Title.innerHTML = Information[0];
+                Projects_Version.innerHTML = Information[1];
+                Projects_Description.innerHTML = Information[2];
+                Projects_Link.href = Information[3];
+                Projects_Privacy.href = Information[4];
+                Projects_Image.src = Information[5];
+            }
+            
+            function FadeProjectOut()
+            {
+                if(Overlay.style.visibility == "visible")
+                {
+                    Projects_Image.style.opacity = "0";
+                    Was_Visible = true;
+                }
+                Projects_Title.style.visibility = "hidden";
+                Projects_Title.style.opacity = "0";
+                Projects_Version.style.visibility = "hidden";
+                Projects_Version.style.opacity = "0";
+                Projects_Description.style.visibility = "hidden";
+                Projects_Description.style.opacity = "0";
+                window.setTimeout(FadeProjectIn, 250);
+            }
+            
+            function FadeProjectIn()
+            {
+                ChangeProject(AllGameProjects[ProjectsIndex]);
+                if(Was_Visible)
+                {
+                    Projects_Image.style.opacity = "1";
+                    Was_Visible = false;
+                }
+                Projects_Title.style.visibility = "visible";
+                Projects_Title.style.opacity = "1";
+                Projects_Version.style.visibility = "visible";
+                Projects_Version.style.opacity = "1";
+                Projects_Description.style.visibility = "visible";
+                Projects_Description.style.opacity = "1";
+            }
+            
+            Overlay.style.visibility = "visible";
+            ChangeProject(AllGameProjects[ProjectsIndex]);
+            var ProjectInterval = window.setInterval(PlusProjectArrow, 10000);
+            window.setInterval(SizeControl, 0);
+            window.setTimeout(Change, 5000);
         </script>
     </body>
-    
-    <footer>
-        <table align="center">
-            <tr>
-                <td align="center" colspan="3"><img src="Images/Icons/Ghost_Icon.png" class="logo"></td>
-            </tr>
-        </table>
-    </footer>
 </html>
