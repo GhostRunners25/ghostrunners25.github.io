@@ -551,5 +551,6 @@ footer h4 {
     text-align: center;
     color: white;
     font-size: 17px;
-    margin-top: 10px
+    margin-top: 10px;
+    margin-bottom: 0;
 }
