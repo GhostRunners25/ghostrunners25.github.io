@@ -431,57 +431,6 @@ article.projects h6 {
     margin: 0;
 }
 
-/* Fiverr */
-
-article.fiverr {
-    margin-top: 60px;
-}
-
-article.fiverr .left {
-    background-color: rgb(20, 20, 20);
-}
-
-article.fiverr .left img {
-    width: 200px;
-    border-radius: 50%;
-    border: 5px solid white;
-    margin: 0px 83px;
-}
-
-article.fiverr .left h2 {
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 0;
-}
-
-article.fiverr .left h2 a {
-    font-weight: 400;
-    transition: 0.25s ease;
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-    padding-bottom: 2px;
-}
-
-article.fiverr .left h2 a:hover {
-    border-bottom: 4px solid white;
-}
-
-.f-profile {
-    position: absolute;
-    margin: 63px 0px
-}
-
-article.fiverr .right h2 {
-    font-size: 25px;
-    margin: 0;
-    padding: 175px 0px;
-    text-align: center;
-    width: 100%;
-}
-
 /* Follow */
 
 article.follow .small {
@@ -539,7 +488,6 @@ article.follow .small {
 /* Footer */
 
 footer {
-    position: relative;
     margin-top: 60px;
     width: 100%;
     height: 60px;
