@@ -1,2 +1,2 @@
 # ghostrunners25.github.io
-This is GhostRunners25 Website, it contains all the files for GhostRunners25 website. This is programmed by GhostRunners25 himself
+This repository contains all the files for the GhostRunners25 website. This was all coded from scratch by Isaac Butler (GhostRunners25). The website entails his projects, where you can follow him and information about him. Please give it a visit :D
