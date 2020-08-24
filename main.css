@@ -246,6 +246,11 @@ footer
     font-size: 14px;
 }
 
+footer a
+{
+    font-weight: 400;
+}
+
 footer #footer-left
 {
     float: left;
