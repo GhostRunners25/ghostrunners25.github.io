@@ -246,7 +246,7 @@ footer
     font-size: 14px;
 }
 
-footer a
+footer a, footer h4
 {
     font-weight: 400;
 }
